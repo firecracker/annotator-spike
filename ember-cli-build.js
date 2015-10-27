@@ -19,5 +19,12 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import('bower_components/annotator/pkg/annotator.css');
+  app.import('bower_components/annotator.touch.js/pkg/annotator.touch.css');
+
+  app.import('bower_components/annotator/pkg/annotator-full.min.js');
+  app.import('bower_components/annotator.touch.js/pkg/annotator.touch.min.js');
+  app.import('bower_components/annotator.touch.js/vendor/highlighter.js');
+
   return app.toTree();
 };
